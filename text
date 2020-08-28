@@ -1,0 +1,14 @@
+#https://pypi.org/project/telebot/
+#pip install telebot
+
+#t.me/VladkaJenya_bot.
+#1336768592:AAEL3X6W-Eo5DaHtQ78U6YFokTBk3MZFQp0
+
+
+@app.route('/command ?(.*)')
+def example_command(message, cmd):
+    chat_dest = message['chat']['id']
+    msg = "Command Recieved: {}".format(cmd)
+
+    app.send_message(chat_dest, msg)
+

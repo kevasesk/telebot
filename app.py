@@ -10,14 +10,9 @@ def parrot(message):
 
    #msg = "Parrot Says: {}".format(user_msg)
    messages = [
-       'м',
-       'Владка классная',
-       'Ну конечно',
-       'Всё понятно',
-       '😘',
-       'Ой ну не ной',
-       'Это да',
-       'Умничка'
+       'test',
+      'test2',
+      'test3'
    ]
    app.send_message(chat_dest, random.choice(messages))
 
